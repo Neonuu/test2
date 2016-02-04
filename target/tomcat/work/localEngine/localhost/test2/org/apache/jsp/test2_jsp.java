@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class test2_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -57,35 +57,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\">\r\n");
       out.write("<title>Insert title here</title>\r\n");
       out.write("</head>\r\n");
-      out.write("<script type=\"text/javascript\" src=\"static/js/jquery-1.10.1.min.js\"></script>\r\n");
-      out.write("<script>\r\n");
-      out.write("function test1(){\r\n");
-      out.write("\t\r\n");
-      out.write("\t$.ajax({\r\n");
-      out.write("\t\t url:\"/test2/userinfo/5\",\r\n");
-      out.write("\t\t data:{},\r\n");
-      out.write("\t\t type:\"post\",\r\n");
-      out.write("\t\t dataType:\"json\",\r\n");
-      out.write("\t\t success:function(data){\r\n");
-      out.write("\t\t\t alert(\"success\");\r\n");
-      out.write("\t\t\t alert(data[0].user_name);\r\n");
-      out.write("\t\t },\r\n");
-      out.write("\t\t error:function(){\r\n");
-      out.write("\t\t\t alert(\"error\");\r\n");
-      out.write("\t\t }\r\n");
-      out.write("\t });\r\n");
-      out.write("\t\r\n");
-      out.write("\t\r\n");
-      out.write("}\r\n");
-      out.write("\r\n");
-      out.write("function test2(){\r\n");
-      out.write("\twindow.location.href=\"test2.jsp\";\r\n");
-      out.write("}\r\n");
-      out.write("\r\n");
-      out.write("</script>\r\n");
       out.write("<body>\r\n");
-      out.write("<input type=\"button\" value=\"test1\" onclick=\"test1();\"/>\r\n");
-      out.write("<input type=\"button\" value=\"test2\" onclick=\"test2();\"/>\r\n");
+      out.write("哈哈\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
     } catch (Throwable t) {

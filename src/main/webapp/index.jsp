@@ -6,17 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="static/js/jquery-1.10.1.min.js"></script>
 <script>
-function test(){
+function test1(){
 	
 	$.ajax({
-		 url:"/test2/test.do",
+		 url:"/test2/userinfo/5",
 		 data:{},
 		 type:"post",
 		 dataType:"json",
 		 success:function(data){
 			 alert("success");
+			 alert(data[0].user_name);
 		 },
 		 error:function(){
 			 alert("error");
@@ -26,8 +27,13 @@ function test(){
 	
 }
 
+function test2(){
+	window.location.href="test2.jsp";
+}
+
 </script>
 <body>
-<input type="button" value="test" onclick="test();"/>
+<input type="button" value="test1" onclick="test1();"/>
+<input type="button" value="test2" onclick="test2();"/>
 </body>
 </html>

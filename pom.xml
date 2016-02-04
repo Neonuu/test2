@@ -6,6 +6,7 @@
   <packaging>war</packaging>
 
    <dependencies>
+   
    <!-- 依赖servlet，导入servlet所需jar包  --> 
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -13,6 +14,7 @@
       <version>3.0.1</version>
       <scope>provided</scope>
     </dependency>
+    
     <!-- 依赖spring，导入spring所需jar包  --> 
     <dependency>  
         <groupId>org.springframework</groupId>  
@@ -39,6 +41,14 @@
     	<artifactId>spring-data-jpa</artifactId>
     	<version>1.9.2.RELEASE</version>
     </dependency>
+    
+    <!-- URL重写filter,用于将访问静态资源http://localhost/foo.css　转为http://localhost/static/foo.css -->
+    <dependency>
+	     <groupId>org.tuckey</groupId>
+	     <artifactId>urlrewritefilter</artifactId>
+	     <version>4.0.4</version>
+    </dependency>
+    
     <!-- json的jar包 -->
     <dependency>
 	    <groupId>org.codehaus.jackson</groupId>
@@ -51,6 +61,47 @@
 		<artifactId>jackson-mapper-asl</artifactId>
 		<version>1.9.12</version>
     </dependency>
+    
+    <!-- 数据库连接所需jar包 -->
+    <dependency>
+    	<groupId>commons-dbcp</groupId>
+    	<artifactId>commons-dbcp</artifactId>
+    	<version>1.4</version>
+    </dependency>
+    <dependency>
+    	<groupId>commons-pool</groupId>
+    	<artifactId>commons-pool</artifactId>
+    	<version>1.6</version>
+    </dependency>
+    <!-- 阿里巴巴公司开发的Druid数据库连接池 -->
+    <dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>druid</artifactId>
+	    <version>1.0.16</version>
+      </dependency>
+    
+    
+    <!-- mybatis核心包 -->
+    <dependency>
+    	<groupId>org.mybatis</groupId>
+    	<artifactId>mybatis</artifactId>
+    	<version>3.1.1</version>
+    </dependency>
+    
+    <!-- mybatis/spring包 -->
+    <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+        
+    <!-- Mysql驱动包 -->    
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>5.1.27</version>
+    </dependency>
+    
    </dependencies>
   
     <build>
